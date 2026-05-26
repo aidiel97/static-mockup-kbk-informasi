@@ -1,161 +1,270 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KBK Teknologi Informasi · UGM</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KBK Teknologi Informasi · UGM</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+<link rel="stylesheet" href="shared.css">
 </head>
 <body>
-<div class="page">
-  <div id="nav-placeholder"></div>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="container">
-      <div class="hero-badge">&#9679; Kelompok Bidang Keahlian · Dept. Teknik Elektro &amp; Teknologi Informasi</div>
-      <h1 class="hero-title">Advancing <span class="accent">Information Technology</span><br>Through Rigorous Research</h1>
-      <p class="hero-desc">Kami mengembangkan penelitian di bidang intelligent systems, cybersecurity, IoT, software engineering, dan human-centered computing — dengan dampak nyata bagi industri dan masyarakat.</p>
-      <div class="hero-actions">
-        <a href="research_areas.html" class="btn-primary">&#128300; Lihat Penelitian</a>
-        <a href="people.html" class="btn-secondary">&#128100; Cari Supervisor</a>
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <div class="brand-mark">TI</div>
+      <div>
+        <div class="brand-name">KBK Teknologi Informasi</div>
+        <div class="brand-sub">Universitas Gadjah Mada</div>
       </div>
+    </a>
+    <div class="nav-links">
+      <a href="research.html" class="nav-link">Research Areas</a>
+      <a href="people.html" class="nav-link">People</a>
+      <a href="publications.html" class="nav-link">Publications</a>
+      <a href="projects.html" class="nav-link">Projects</a>
+      <a href="programs.html" class="nav-link">Academic Programs</a>
+      <a href="events.html" class="nav-link">Events</a>
+      <a href="contact.html" class="nav-link nav-cta">Contact</a>
     </div>
-  </section>
-
-  <!-- STATS -->
-  <div class="stats-bar">
-    <div class="stat-item"><div class="stat-num">18+</div><div class="stat-label">Peneliti aktif</div></div>
-    <div class="stat-item"><div class="stat-num">240+</div><div class="stat-label">Publikasi terindeks</div></div>
-    <div class="stat-item"><div class="stat-num">35+</div><div class="stat-label">Proyek &amp; kemitraan</div></div>
-    <div class="stat-item"><div class="stat-num">5</div><div class="stat-label">Cluster riset</div></div>
   </div>
+</nav>
 
-  <!-- RESEARCH AREAS -->
-  <section class="section">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-title">Research Areas</div>
-        <a href="research_areas.html" class="section-link">Semua topik &rarr;</a>
-      </div>
-      <div class="topics-grid">
-        <a href="research_areas.html#intelligent" class="topic-chip chip-blue">&#129504; Intelligent Systems &amp; Data <span class="count">7</span></a>
-        <a href="research_areas.html#networks" class="topic-chip chip-teal">&#128274; Networks, Security &amp; Infrastructure <span class="count">5</span></a>
-        <a href="research_areas.html#iot" class="topic-chip chip-coral">&#128268; IoT, Smart Systems &amp; Environment <span class="count">4</span></a>
-        <a href="research_areas.html#software" class="topic-chip chip-purple">&#128187; Software &amp; Information Systems <span class="count">6</span></a>
-        <a href="research_areas.html#hci" class="topic-chip chip-amber">&#128421; Human-Centered Computing &amp; Education <span class="count">5</span></a>
-      </div>
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-badge">
+      <i class="ti ti-atom"></i>
+      Kelompok Bidang Keahlian · Dept. Teknik Elektro & Teknologi Informasi
     </div>
-  </section>
-
-  <!-- RECENT RESEARCH -->
-  <section class="section">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-title">Penelitian Terkini</div>
-        <a href="projects.html" class="section-link">Semua penelitian &rarr;</a>
-      </div>
-      <div class="research-grid">
-        <div class="card">
-          <span class="research-tag rtag-blue">Intelligent Systems</span>
-          <div class="research-title">Adaptive Recommendation System for Personalized E-Learning Pathways</div>
-          <div class="research-meta">Teguh B. Adji &nbsp;·&nbsp; 2024 — ongoing</div>
-        </div>
-        <div class="card">
-          <span class="research-tag rtag-teal">Network Security</span>
-          <div class="research-title">Anomaly Detection in Encrypted Network Traffic Using Federated Learning</div>
-          <div class="research-meta">Widyawan &nbsp;·&nbsp; 2024 — ongoing</div>
-        </div>
-        <div class="card">
-          <span class="research-tag rtag-coral">IoT &amp; Smart Systems</span>
-          <div class="research-title">Context-Aware IoT Framework for Environmental Monitoring in Smart Campus</div>
-          <div class="research-meta">I Wayan Mustika &nbsp;·&nbsp; 2023 — ongoing</div>
-        </div>
-        <div class="card">
-          <span class="research-tag rtag-purple">Software Engineering</span>
-          <div class="research-title">Blockchain-Based Credential Verification for Distributed Academic Systems</div>
-          <div class="research-meta">Guntur D. Putra &nbsp;·&nbsp; 2024 — ongoing</div>
-        </div>
-      </div>
+    <h1 class="hero-title">
+      Advancing <span class="accent">Information Technology</span><br>Through Rigorous Research
+    </h1>
+    <p class="hero-desc">
+      Kami mengembangkan penelitian di bidang intelligent systems, cybersecurity, IoT, software engineering, dan human-centered computing — dengan dampak nyata bagi industri dan masyarakat.
+    </p>
+    <div class="hero-actions">
+      <a href="research.html" class="btn-primary"><i class="ti ti-flask"></i> Lihat Penelitian</a>
+      <a href="people.html" class="btn-outline"><i class="ti ti-users"></i> Cari Supervisor</a>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- PEOPLE HIGHLIGHT -->
-  <section class="section">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-title">People</div>
-        <a href="people.html" class="section-link">Semua dosen &rarr;</a>
-      </div>
-      <div class="people-grid">
-        <div class="card person-card">
-          <div class="avatar av-blue">TBA</div>
-          <div class="person-name">Teguh B. Adji</div>
-          <div class="person-role">Lektor Kepala</div>
-          <div class="person-tags"><span class="mini-tag">NLP</span><span class="mini-tag">Recommender</span></div>
-          <div class="open-badge"><span class="open-dot"></span> Open S2/S3</div>
-        </div>
-        <div class="card person-card">
-          <div class="avatar av-teal">W</div>
-          <div class="person-name">Widyawan</div>
-          <div class="person-role">Lektor Kepala</div>
-          <div class="person-tags"><span class="mini-tag">Security</span><span class="mini-tag">Big Data</span><span class="mini-tag">ML</span></div>
-          <div class="open-badge"><span class="open-dot"></span> Open S2/S3</div>
-        </div>
-        <div class="card person-card">
-          <div class="avatar av-coral">RF</div>
-          <div class="person-name">Ridi Ferdiana</div>
-          <div class="person-role">Guru Besar</div>
-          <div class="person-tags"><span class="mini-tag">HCI</span><span class="mini-tag">Software Arch</span></div>
-          <div class="open-badge"><span class="open-dot"></span> Open S2/S3</div>
-        </div>
-        <div class="card person-card">
-          <div class="avatar av-purple">GDP</div>
-          <div class="person-name">Guntur D. Putra</div>
-          <div class="person-role">Lektor</div>
-          <div class="person-tags"><span class="mini-tag">IoT</span><span class="mini-tag">Blockchain</span><span class="mini-tag">ML</span></div>
-          <div class="open-badge"><span class="open-dot"></span> Open S2/S3</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PUBLICATIONS HIGHLIGHT -->
-  <section class="section">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-title">Publikasi Terbaru</div>
-        <a href="publications.html" class="section-link">Semua publikasi &rarr;</a>
-      </div>
-      <div class="pub-list">
-        <div class="pub-item">
-          <div class="pub-index">01</div>
-          <div>
-            <div class="pub-title">Multi-Task Learning for Simultaneous Intent Detection and Slot Filling in Low-Resource Indonesian NLP</div>
-            <div class="pub-meta"><span>Teguh B. Adji et al.</span><span>IEEE Access · 2024</span><span class="pub-badge">Scopus Q1</span></div>
-          </div>
-        </div>
-        <div class="pub-item">
-          <div class="pub-index">02</div>
-          <div>
-            <div class="pub-title">Privacy-Preserving Federated Learning for Intrusion Detection in Heterogeneous IoT Networks</div>
-            <div class="pub-meta"><span>Widyawan et al.</span><span>Computer Networks · 2024</span><span class="pub-badge">Scopus Q1</span></div>
-          </div>
-        </div>
-        <div class="pub-item">
-          <div class="pub-index">03</div>
-          <div>
-            <div class="pub-title">Decentralized Identity Management Using Smart Contracts for Academic Record Verification</div>
-            <div class="pub-meta"><span>Guntur D. Putra et al.</span><span>Future Generation Computer Systems · 2023</span><span class="pub-badge">Scopus Q1</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div id="footer-placeholder"></div>
+<div class="stats-bar">
+  <div class="stat-item">
+    <div class="stat-num">18+</div>
+    <div class="stat-label">Peneliti aktif</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">240+</div>
+    <div class="stat-label">Publikasi terindeks</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">35+</div>
+    <div class="stat-label">Proyek & kemitraan</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">5</div>
+    <div class="stat-label">Cluster riset</div>
+  </div>
 </div>
-<script src="nav.js"></script>
-<script>renderNav('index.html'); renderFooter();</script>
+
+<section class="section">
+  <div class="section-header">
+    <div class="section-title">Research Areas</div>
+    <a href="research.html" class="section-link">Semua topik <i class="ti ti-arrow-right"></i></a>
+  </div>
+  <div class="topics-grid">
+    <a href="research.html" class="topic-chip blue"><i class="ti ti-brain"></i> Intelligent Systems & Data <span class="chip-count">7</span></a>
+    <a href="research.html" class="topic-chip teal"><i class="ti ti-shield-lock"></i> Networks, Security & Infrastructure <span class="chip-count">5</span></a>
+    <a href="research.html" class="topic-chip coral"><i class="ti ti-cpu"></i> IoT, Smart Systems & Environment <span class="chip-count">4</span></a>
+    <a href="research.html" class="topic-chip purple"><i class="ti ti-code"></i> Software & Information Systems <span class="chip-count">6</span></a>
+    <a href="research.html" class="topic-chip amber"><i class="ti ti-device-desktop"></i> Human-Centered Computing & Education <span class="chip-count">5</span></a>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-header">
+    <div class="section-title">Galeri Kegiatan</div>
+    <a href="events.html" class="section-link">Semua kegiatan <i class="ti ti-arrow-right"></i></a>
+  </div>
+  <div class="gallery-grid">
+    <div class="gallery-card main-photo">
+      <div class="photo-placeholder">
+        <i class="ti ti-photo-plus"></i>
+        <span>Upload foto utama event</span>
+        <small>Recommended: 1200 × 700px</small>
+      </div>
+      <div class="gallery-caption">
+        <span class="gallery-label">Featured Event</span>
+        <div class="gallery-title">Nama Event / Kegiatan</div>
+        <div class="gallery-date"><i class="ti ti-calendar"></i> Bulan Tahun</div>
+      </div>
+    </div>
+    <div class="gallery-side">
+      <div class="gallery-card small-photo">
+        <div class="photo-placeholder small">
+          <i class="ti ti-photo-plus"></i>
+          <span>Foto event 2</span>
+        </div>
+        <div class="gallery-caption small">
+          <div class="gallery-title small">Seminar / Workshop</div>
+          <div class="gallery-date"><i class="ti ti-calendar"></i> 2024</div>
+        </div>
+      </div>
+      <div class="gallery-card small-photo">
+        <div class="photo-placeholder small">
+          <i class="ti ti-photo-plus"></i>
+          <span>Foto event 3</span>
+        </div>
+        <div class="gallery-caption small">
+          <div class="gallery-title small">Kunjungan Industri</div>
+          <div class="gallery-date"><i class="ti ti-calendar"></i> 2024</div>
+        </div>
+      </div>
+      <div class="gallery-card small-photo">
+        <div class="photo-placeholder small">
+          <i class="ti ti-photo-plus"></i>
+          <span>Foto event 4</span>
+        </div>
+        <div class="gallery-caption small">
+          <div class="gallery-title small">Abdimas / Outreach</div>
+          <div class="gallery-date"><i class="ti ti-calendar"></i> 2024</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-header">
+    <div class="section-title">Penelitian Terkini</div>
+    <a href="research.html" class="section-link">Semua penelitian <i class="ti ti-arrow-right"></i></a>
+  </div>
+  <div class="research-grid">
+    <div class="research-card">
+      <span class="rtag blue">Intelligent Systems</span>
+      <div class="research-title">Adaptive Recommendation System for Personalized E-Learning Pathways</div>
+      <div class="research-meta"><i class="ti ti-user"></i> Teguh B. Adji &nbsp;·&nbsp; <i class="ti ti-calendar"></i> 2024 — ongoing</div>
+    </div>
+    <div class="research-card">
+      <span class="rtag teal">Network Security</span>
+      <div class="research-title">Anomaly Detection in Encrypted Network Traffic Using Federated Learning</div>
+      <div class="research-meta"><i class="ti ti-user"></i> Widyawan &nbsp;·&nbsp; <i class="ti ti-calendar"></i> 2024 — ongoing</div>
+    </div>
+    <div class="research-card">
+      <span class="rtag coral">IoT & Smart Systems</span>
+      <div class="research-title">Context-Aware IoT Framework for Environmental Monitoring in Smart Campus</div>
+      <div class="research-meta"><i class="ti ti-user"></i> I Wayan Mustika &nbsp;·&nbsp; <i class="ti ti-calendar"></i> 2023 — ongoing</div>
+    </div>
+    <div class="research-card">
+      <span class="rtag purple">Software Engineering</span>
+      <div class="research-title">Blockchain-Based Credential Verification for Distributed Academic Systems</div>
+      <div class="research-meta"><i class="ti ti-user"></i> Guntur D. Putra &nbsp;·&nbsp; <i class="ti ti-calendar"></i> 2024 — ongoing</div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-header">
+    <div class="section-title">People</div>
+    <a href="people.html" class="section-link">Semua dosen <i class="ti ti-arrow-right"></i></a>
+  </div>
+  <div class="people-grid">
+    <a href="people.html" class="person-card">
+      <div class="avatar av-blue">TBA</div>
+      <div class="person-name">Teguh B. Adji</div>
+      <div class="person-role">Lektor Kepala</div>
+      <div class="person-tags"><span class="mini-tag">NLP</span><span class="mini-tag">Recommender</span></div>
+      <div class="open-badge">Open for S2/S3</div>
+    </a>
+    <a href="people.html" class="person-card">
+      <div class="avatar av-teal">W</div>
+      <div class="person-name">Widyawan</div>
+      <div class="person-role">Lektor Kepala</div>
+      <div class="person-tags"><span class="mini-tag">Security</span><span class="mini-tag">ML</span></div>
+      <div class="open-badge">Open for S2/S3</div>
+    </a>
+    <a href="people.html" class="person-card">
+      <div class="avatar av-coral">RF</div>
+      <div class="person-name">Ridi Ferdiana</div>
+      <div class="person-role">Guru Besar</div>
+      <div class="person-tags"><span class="mini-tag">HCI</span><span class="mini-tag">Software Arch</span></div>
+      <div class="open-badge">Open for S2/S3</div>
+    </a>
+    <a href="people.html" class="person-card">
+      <div class="avatar av-purple">GDP</div>
+      <div class="person-name">Guntur D. Putra</div>
+      <div class="person-role">Lektor</div>
+      <div class="person-tags"><span class="mini-tag">IoT</span><span class="mini-tag">Blockchain</span></div>
+      <div class="open-badge">Open for S2/S3</div>
+    </a>
+    <a href="people.html" class="person-card">
+      <div class="avatar av-blue">SW</div>
+      <div class="person-name">Sunu Wibirama</div>
+      <div class="person-role">Lektor Kepala</div>
+      <div class="person-tags"><span class="mini-tag">CV</span><span class="mini-tag">HCI</span></div>
+      <div class="open-badge">Open for S2/S3</div>
+    </a>
+    <a href="people.html" class="person-card">
+      <div class="avatar av-teal">NAS</div>
+      <div class="person-name">N. A. Setiawan</div>
+      <div class="person-role">Lektor Kepala</div>
+      <div class="person-tags"><span class="mini-tag">Blockchain</span><span class="mini-tag">Soft Computing</span></div>
+      <div class="open-badge">Open for S2/S3</div>
+    </a>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-header">
+    <div class="section-title">Publikasi Terbaru</div>
+    <a href="publications.html" class="section-link">Semua publikasi <i class="ti ti-arrow-right"></i></a>
+  </div>
+  <div class="pub-list">
+    <div class="pub-item">
+      <div class="pub-index">01</div>
+      <div class="pub-body">
+        <div class="pub-title">Multi-Task Learning for Simultaneous Intent Detection and Slot Filling in Low-Resource Indonesian NLP</div>
+        <div class="pub-meta"><span>Teguh B. Adji et al.</span><span>IEEE Access · 2024</span><span class="pub-badge">Scopus Q1</span></div>
+      </div>
+    </div>
+    <div class="pub-item">
+      <div class="pub-index">02</div>
+      <div class="pub-body">
+        <div class="pub-title">Privacy-Preserving Federated Learning for Intrusion Detection in Heterogeneous IoT Networks</div>
+        <div class="pub-meta"><span>Widyawan et al.</span><span>Computer Networks · 2024</span><span class="pub-badge">Scopus Q1</span></div>
+      </div>
+    </div>
+    <div class="pub-item">
+      <div class="pub-index">03</div>
+      <div class="pub-body">
+        <div class="pub-title">Decentralized Identity Management Using Smart Contracts for Academic Record Verification</div>
+        <div class="pub-meta"><span>Guntur D. Putra et al.</span><span>Future Generation Computer Systems · 2023</span><span class="pub-badge">Scopus Q1</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="brand-mark small">TI</div>
+      <div>
+        <div class="footer-name">KBK Teknologi Informasi</div>
+        <div class="footer-sub">Dept. Teknik Elektro & Teknologi Informasi · UGM</div>
+      </div>
+    </div>
+    <div class="footer-links">
+      <a href="#">SINTA</a>
+      <a href="#">Scopus</a>
+      <a href="programs.html">Academic Programs</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-copy">© 2025 KBK Teknologi Informasi · Universitas Gadjah Mada</div>
+  </div>
+</footer>
+
 </body>
 </html>
