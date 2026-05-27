@@ -1,147 +1,306 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Teguh B. Adji · KBK TI UGM</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Teguh B. Adji · KBK TI UGM</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+<link rel="stylesheet" href="shared.css">
+<style>
+  .breadcrumb {
+    font-size: 13px; color: var(--text-3);
+    padding: 1rem 0; display: flex; align-items: center; gap: 6px;
+  }
+  .breadcrumb a { color: var(--text-3); transition: color 0.15s; }
+  .breadcrumb a:hover { color: var(--accent); }
+  .breadcrumb i { font-size: 14px; }
+
+  .profile-header {
+    display: flex; gap: 2rem; align-items: flex-start;
+    padding: 2rem 0 2.5rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .profile-avatar {
+    width: 96px; height: 96px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 24px; font-weight: 600; flex-shrink: 0;
+    border: 2px solid var(--border-2);
+  }
+  .profile-name {
+    font-size: 22px; font-weight: 600; color: var(--text);
+    margin-bottom: 4px; line-height: 1.3;
+  }
+  .profile-title {
+    font-size: 14px; color: var(--text-2); margin-bottom: 14px;
+  }
+  .profile-links { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+  .ext-link {
+    display: inline-flex; align-items: center; gap: 5px;
+    font-size: 12px; color: var(--text-2);
+    border: 1px solid var(--border-2);
+    padding: 5px 12px; border-radius: var(--radius);
+    transition: all 0.15s;
+  }
+  .ext-link:hover { color: var(--accent); border-color: rgba(59,130,246,0.4); }
+  .ext-link i { font-size: 13px; }
+
+  .stat-grid {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px;
+  }
+  .stat-box {
+    text-align: center; padding: 12px 8px;
+    background: var(--bg-3); border-radius: var(--radius);
+    border: 1px solid var(--border);
+  }
+  .stat-box-num { font-size: 22px; font-weight: 600; color: var(--accent); }
+  .stat-box-label { font-size: 11px; color: var(--text-3); margin-top: 2px; }
+
+  .edu-list { display: flex; flex-direction: column; gap: 6px; }
+  .edu-item {
+    font-size: 13px; color: var(--text-2); line-height: 1.5;
+    display: flex; gap: 8px; align-items: flex-start;
+  }
+  .edu-item i { color: var(--text-3); margin-top: 2px; flex-shrink: 0; }
+
+  .section-divider {
+    border: none; border-top: 1px solid var(--border);
+    margin: 0;
+  }
+
+  .profile-section { padding: 2rem 0; border-bottom: 1px solid var(--border); }
+  .profile-section:last-child { border-bottom: none; }
+
+  .section-label {
+    font-size: 11px; font-weight: 600; letter-spacing: 0.07em;
+    text-transform: uppercase; color: var(--text-3); margin-bottom: 1rem;
+  }
+</style>
 </head>
 <body>
-<div class="page">
-  <div id="nav-placeholder"></div>
 
-  <div class="container">
-    <div class="breadcrumb">
-      <a href="people.html">People</a> &rsaquo; Teguh Bharata Adji
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <div class="brand-mark">TI</div>
+      <div><div class="brand-name">KBK Teknologi Informasi</div><div class="brand-sub">Universitas Gadjah Mada</div></div>
+    </a>
+    <div class="nav-links">
+      <a href="research.html" class="nav-link">Research Areas</a>
+      <a href="people.html" class="nav-link active">People</a>
+      <a href="publications.html" class="nav-link">Publications</a>
+      <a href="projects.html" class="nav-link">Projects</a>
+      <a href="programs.html" class="nav-link">Academic Programs</a>
+      <a href="events.html" class="nav-link">Events</a>
+      <a href="contact.html" class="nav-link nav-cta">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<div style="max-width:1200px;margin:0 auto;padding:0 2rem;">
+
+  <div class="breadcrumb">
+    <a href="people.html">People</a>
+    <i class="ti ti-chevron-right"></i>
+    <span style="color:var(--text-2);">Teguh Bharata Adji</span>
+  </div>
+
+  <div class="profile-header">
+    <div class="avatar av-blue profile-avatar">TBA</div>
+    <div style="flex:1;">
+      <div class="profile-name">Teguh Bharata Adji, S.T., M.T., M.Eng., Ph.D.</div>
+      <div class="profile-title">Lektor Kepala · Kelompok Bidang Keahlian Teknologi Informasi</div>
+      <div style="margin-bottom:14px;">
+        <div class="open-badge" style="font-size:12px;padding:4px 12px;">Open for S2/S3 Supervision</div>
+      </div>
+      <div class="profile-links">
+        <a href="#" class="ext-link"><i class="ti ti-external-link"></i> SINTA</a>
+        <a href="#" class="ext-link"><i class="ti ti-external-link"></i> Scopus</a>
+        <a href="#" class="ext-link"><i class="ti ti-external-link"></i> Google Scholar</a>
+        <a href="contact.html" class="btn-primary" style="font-size:13px;padding:6px 16px;">
+          <i class="ti ti-mail"></i> Hubungi
+        </a>
+      </div>
     </div>
   </div>
 
-  <div class="container">
-    <div class="profile-header">
-      <div class="profile-avatar av-blue" style="background:#E6F1FB;color:#185FA5;">TBA</div>
-      <div>
-        <div class="profile-name">Teguh Bharata Adji, S.T., M.T., M.Eng., Ph.D.</div>
-        <div class="profile-title">Lektor Kepala · Kelompok Bidang Keahlian Teknologi Informasi</div>
-        <div style="margin-bottom:12px;">
-          <div class="open-badge" style="font-size:12px;padding:4px 12px;"><span class="open-dot"></span> Open for S2/S3 Supervision</div>
-        </div>
-        <div class="profile-links">
-          <a href="#" class="ext-link">SINTA</a>
-          <a href="#" class="ext-link">Scopus</a>
-          <a href="#" class="ext-link">Google Scholar</a>
-          <a href="contact.html" class="btn-primary" style="font-size:13px;padding:6px 14px;">&#9993; Hubungi</a>
+  <div style="display:grid;grid-template-columns:1fr 320px;gap:2.5rem;padding:2rem 0;">
+
+    <!-- LEFT COLUMN -->
+    <div>
+
+      <div class="profile-section">
+        <div class="section-label">Bio</div>
+        <p style="font-size:14px;color:var(--text-2);line-height:1.85;">
+          Teguh Bharata Adji adalah dosen dan peneliti di bidang Natural Language Processing, Recommender System, dan Business Analytics. Fokus penelitiannya mencakup pemrosesan bahasa alami untuk bahasa Indonesia bersumber rendah, sistem rekomendasi berbasis deep learning, serta penerapan analitik data untuk pengambilan keputusan berbasis bukti.
+        </p>
+      </div>
+
+      <div class="profile-section">
+        <div class="section-label">Research Topics</div>
+        <div class="topics-grid">
+          <a href="research.html" class="topic-chip blue"><i class="ti ti-brain"></i> Natural Language Processing</a>
+          <a href="research.html" class="topic-chip blue"><i class="ti ti-brain"></i> Recommender System</a>
+          <a href="research.html" class="topic-chip blue"><i class="ti ti-brain"></i> Business Analytics</a>
+          <a href="research.html" class="topic-chip purple"><i class="ti ti-code"></i> Software Testing</a>
         </div>
       </div>
+
+      <div class="profile-section">
+        <div class="section-header">
+          <div class="section-label" style="margin-bottom:0;">Publikasi</div>
+          <a href="publications.html" class="section-link">Semua <i class="ti ti-arrow-right"></i></a>
+        </div>
+        <div class="pub-list" style="margin-top:1rem;">
+          <div class="pub-item">
+            <div class="pub-index">01</div>
+            <div class="pub-body">
+              <div class="pub-title">Multi-Task Learning for Simultaneous Intent Detection and Slot Filling in Low-Resource Indonesian NLP</div>
+              <div class="pub-meta">
+                <span>IEEE Access · 2024</span>
+                <span class="pub-badge">Scopus Q1</span>
+                <a href="#" style="font-size:11px;color:var(--accent);margin-left:auto;display:flex;align-items:center;gap:3px;"><i class="ti ti-external-link" style="font-size:13px;"></i>DOI</a>
+              </div>
+            </div>
+          </div>
+          <div class="pub-item">
+            <div class="pub-index">02</div>
+            <div class="pub-body">
+              <div class="pub-title">Hybrid Deep Learning Approach for Aspect-Based Sentiment Analysis on Indonesian Product Reviews</div>
+              <div class="pub-meta">
+                <span>Expert Systems with Applications · 2023</span>
+                <span class="pub-badge">Scopus Q1</span>
+                <a href="#" style="font-size:11px;color:var(--accent);margin-left:auto;display:flex;align-items:center;gap:3px;"><i class="ti ti-external-link" style="font-size:13px;"></i>DOI</a>
+              </div>
+            </div>
+          </div>
+          <div class="pub-item">
+            <div class="pub-index">03</div>
+            <div class="pub-body">
+              <div class="pub-title">Graph Neural Network-Based Collaborative Filtering for E-Commerce Recommendation</div>
+              <div class="pub-meta">
+                <span>Information Sciences · 2022</span>
+                <span class="pub-badge">Scopus Q1</span>
+                <a href="#" style="font-size:11px;color:var(--accent);margin-left:auto;display:flex;align-items:center;gap:3px;"><i class="ti ti-external-link" style="font-size:13px;"></i>DOI</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="profile-section">
+        <div class="section-label">Penelitian & Proyek Aktif</div>
+        <div class="research-grid" style="margin-top:1rem;">
+          <div class="research-card">
+            <span class="rtag blue">Ongoing · Hibah DIKTI</span>
+            <div class="research-title">Adaptive Recommendation System for Personalized E-Learning Pathways</div>
+            <div class="research-meta"><i class="ti ti-calendar"></i> 2024 — 2026</div>
+          </div>
+          <div class="research-card">
+            <span class="rtag purple">Collaboration · Industri</span>
+            <div class="research-title">NLP-Based Sentiment Monitoring for Public Service Feedback</div>
+            <div class="research-meta"><i class="ti ti-calendar"></i> 2023 — 2025</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- RIGHT COLUMN -->
+    <div style="display:flex;flex-direction:column;gap:14px;">
+
+      <div class="card">
+        <div class="section-label">Pendidikan</div>
+        <div class="edu-list">
+          <div class="edu-item">
+            <i class="ti ti-school"></i>
+            <div><strong style="color:var(--text);">Ph.D.</strong><br>Universiti Teknologi Malaysia</div>
+          </div>
+          <div class="edu-item">
+            <i class="ti ti-school"></i>
+            <div><strong style="color:var(--text);">M.Eng.</strong><br>Osaka University</div>
+          </div>
+          <div class="edu-item">
+            <i class="ti ti-school"></i>
+            <div><strong style="color:var(--text);">M.T.</strong><br>Universitas Gadjah Mada</div>
+          </div>
+          <div class="edu-item">
+            <i class="ti ti-school"></i>
+            <div><strong style="color:var(--text);">S.T.</strong><br>Universitas Gadjah Mada</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="section-label">Statistik Akademik</div>
+        <div class="stat-grid">
+          <div class="stat-box">
+            <div class="stat-box-num">42</div>
+            <div class="stat-box-label">Publikasi</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-box-num">380</div>
+            <div class="stat-box-label">Sitasi</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-box-num">11</div>
+            <div class="stat-box-label">h-index</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-box-num" style="color:var(--teal);">S3</div>
+            <div class="stat-box-label">SINTA</div>
+          </div>
+        </div>
+        <div style="margin-top:10px;font-size:11px;color:var(--text-3);text-align:center;">
+          <i class="ti ti-refresh" style="font-size:12px;"></i> Diperbarui dari Scopus & SINTA
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="section-label">Bimbingan Tersedia</div>
+        <div style="font-size:13px;color:var(--text-2);line-height:1.7;margin-bottom:12px;">
+          Saat ini terbuka untuk mahasiswa S2 dan S3. Topik yang relevan: NLP, Recommender Systems, dan Data Analytics.
+        </div>
+        <a href="contact.html" class="btn-primary" style="display:flex;justify-content:center;font-size:13px;padding:8px;">
+          <i class="ti ti-mail"></i> Kirim Inquiry
+        </a>
+      </div>
+
+      <div class="card">
+        <div class="section-label">Profil Eksternal</div>
+        <div style="display:flex;flex-direction:column;gap:6px;">
+          <a href="#" class="ext-link" style="justify-content:space-between;">
+            <span><i class="ti ti-external-link"></i> SINTA</span>
+            <i class="ti ti-arrow-right" style="font-size:13px;"></i>
+          </a>
+          <a href="#" class="ext-link" style="justify-content:space-between;">
+            <span><i class="ti ti-external-link"></i> Scopus Author</span>
+            <i class="ti ti-arrow-right" style="font-size:13px;"></i>
+          </a>
+          <a href="#" class="ext-link" style="justify-content:space-between;">
+            <span><i class="ti ti-external-link"></i> Google Scholar</span>
+            <i class="ti ti-arrow-right" style="font-size:13px;"></i>
+          </a>
+        </div>
+      </div>
+
     </div>
   </div>
-
-  <section class="section">
-    <div class="container">
-      <div style="display:grid;grid-template-columns:2fr 1fr;gap:2.5rem;">
-        <div>
-          <h2 style="font-size:17px;font-weight:700;margin-bottom:0.75rem;">Bio</h2>
-          <p style="font-size:14px;color:#444;line-height:1.8;margin-bottom:1.5rem;">
-            Teguh Bharata Adji adalah dosen dan peneliti di bidang Natural Language Processing, Recommender System, dan Business Analytics. Fokus penelitiannya mencakup pemrosesan bahasa alami untuk bahasa Indonesia bersumber rendah, sistem rekomendasi berbasis deep learning, serta penerapan analitik data untuk pengambilan keputusan berbasis bukti.
-          </p>
-          <h2 style="font-size:17px;font-weight:700;margin-bottom:0.75rem;">Research Topics</h2>
-          <div class="topics-grid" style="margin-bottom:1.5rem;">
-            <a href="research_areas.html#intelligent" class="topic-chip chip-blue">Natural Language Processing</a>
-            <a href="research_areas.html#intelligent" class="topic-chip chip-blue">Recommender System</a>
-            <a href="research_areas.html#intelligent" class="topic-chip chip-blue">Business Analytics</a>
-            <a href="research_areas.html#software" class="topic-chip chip-purple">Software Testing</a>
-          </div>
-        </div>
-        <div>
-          <div class="card" style="margin-bottom:14px;">
-            <div style="font-size:12px;color:#888;margin-bottom:4px;font-weight:700;">PENDIDIKAN</div>
-            <div style="font-size:13px;line-height:1.8;color:#333;">
-              Ph.D. · Universiti Teknologi Malaysia<br>
-              M.Eng. · Osaka University<br>
-              M.T. · Universitas Gadjah Mada<br>
-              S.T. · Universitas Gadjah Mada
-            </div>
-          </div>
-          <div class="card">
-            <div style="font-size:12px;color:#888;margin-bottom:8px;font-weight:700;">STATISTIK</div>
-            <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
-              <div style="text-align:center;padding:8px;background:#f8f8f8;border-radius:8px;">
-                <div style="font-size:20px;font-weight:700;color:#185FA5;">42</div>
-                <div style="font-size:11px;color:#888;">Publikasi</div>
-              </div>
-              <div style="text-align:center;padding:8px;background:#f8f8f8;border-radius:8px;">
-                <div style="font-size:20px;font-weight:700;color:#185FA5;">380</div>
-                <div style="font-size:11px;color:#888;">Sitasi</div>
-              </div>
-              <div style="text-align:center;padding:8px;background:#f8f8f8;border-radius:8px;">
-                <div style="font-size:20px;font-weight:700;color:#185FA5;">11</div>
-                <div style="font-size:11px;color:#888;">h-index</div>
-              </div>
-              <div style="text-align:center;padding:8px;background:#f8f8f8;border-radius:8px;">
-                <div style="font-size:20px;font-weight:700;color:#185FA5;">S3</div>
-                <div style="font-size:11px;color:#888;">SINTA Score</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-title">Publikasi</div>
-        <a href="publications.html?author=tba" class="section-link">Semua &rarr;</a>
-      </div>
-      <div class="pub-list">
-        <div class="pub-item">
-          <div class="pub-index">01</div>
-          <div>
-            <div class="pub-title">Multi-Task Learning for Simultaneous Intent Detection and Slot Filling in Low-Resource Indonesian NLP</div>
-            <div class="pub-meta"><span>IEEE Access · 2024</span><span class="pub-badge">Scopus Q1</span></div>
-          </div>
-        </div>
-        <div class="pub-item">
-          <div class="pub-index">02</div>
-          <div>
-            <div class="pub-title">Hybrid Deep Learning Approach for Aspect-Based Sentiment Analysis on Indonesian Product Reviews</div>
-            <div class="pub-meta"><span>Expert Systems with Applications · 2023</span><span class="pub-badge">Scopus Q1</span></div>
-          </div>
-        </div>
-        <div class="pub-item">
-          <div class="pub-index">03</div>
-          <div>
-            <div class="pub-title">Graph Neural Network-Based Collaborative Filtering for E-Commerce Recommendation</div>
-            <div class="pub-meta"><span>Information Sciences · 2022</span><span class="pub-badge">Scopus Q1</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-title">Penelitian &amp; Proyek Aktif</div>
-      </div>
-      <div class="research-grid">
-        <div class="card">
-          <span class="research-tag rtag-blue">Ongoing</span>
-          <div class="research-title">Adaptive Recommendation System for Personalized E-Learning Pathways</div>
-          <div class="research-meta">Hibah DIKTI · 2024 — 2026</div>
-        </div>
-        <div class="card">
-          <span class="research-tag rtag-purple">Collaboration</span>
-          <div class="research-title">NLP-Based Sentiment Monitoring for Public Service Feedback</div>
-          <div class="research-meta">Kemitraan Industri · 2023 — 2025</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div id="footer-placeholder"></div>
 </div>
-<script src="nav.js"></script>
-<script>renderNav('people.html'); renderFooter();</script>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="brand-mark small">TI</div>
+      <div><div class="footer-name">KBK Teknologi Informasi</div><div class="footer-sub">Dept. Teknik Elektro & Teknologi Informasi · UGM</div></div>
+    </div>
+    <div class="footer-links">
+      <a href="#">SINTA</a><a href="#">Scopus</a>
+      <a href="programs.html">Academic Programs</a><a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-copy">© 2025 KBK Teknologi Informasi · Universitas Gadjah Mada</div>
+  </div>
+</footer>
+
 </body>
 </html>
